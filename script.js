@@ -121,7 +121,6 @@ function checkValueMissing(element) {
   const span = document.querySelector(`.${element.id}-error`);
   if (element.validity.valueMissing) {
     isValid = false;
-    // const span = element.nextSibling;
     span.textContent = "Field Required";
     span.classList.add("active-error");
     element.classList.add("input-invalid");
