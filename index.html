@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form class="form" action="/" method="get" novalidate>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+      <span class="error email-error"></span>
+
+      <label for="country">Country:</label>
+      <input type="text" name="country" id="country" required />
+      <span class="error country-error"></span>
+
+      <label for="zip">Zip Code:</label>
+      <input type="number" name="zip" id="zip" min="6" max="6" required />
+      <span class="error zip-error"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required />
+      <span class="error password-error"></span>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" />
+      <span class="error confirm-password-error"></span>
+
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </body>
+</html>
